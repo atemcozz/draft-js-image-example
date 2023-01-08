@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+.public-DraftEditor-content {
+  width: 750px;
+  height: 500px;
+  padding: 15px;
+  overflow-y: auto;
+  text-align: left;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.toolbar {
+  padding: 15px;
+  border-bottom: 1px solid black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.toolbar__controls {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 8px;
+}
+.toolbar__button {
+  cursor: pointer;
+  opacity: 0.5;
 }
 
-.App-link {
-  color: #61dafb;
+.toolbar__button--active {
+  font-weight: bold;
+  opacity: 1;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.DraftEditor-root figure {
+  margin: 0;
+  width: 100%;
+}
+.DraftEditor-root img {
+  border-radius: 8px;
+  margin: 8px 0;
+  width: 100%;
+}
+.icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+.bold {
+  background-image: url("./icons/bold.svg");
+}
+.italic {
+  background-image: url("./icons/italic.svg");
+}
+.underline {
+  background-image: url("./icons/underline.svg");
+}
+.image {
+  background-image: url("./icons/image.svg");
 }
